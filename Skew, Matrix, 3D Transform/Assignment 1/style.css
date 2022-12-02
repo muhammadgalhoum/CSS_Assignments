@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+	--mainColor:#fff;
+	--mainBGColor:#ff5722;
+}
+
+h1 {
+	width: 150px;
+	padding: 20px;
+	margin: 50px auto;
+	color: var(--mainColor,#fff);
+	background-color: var(--mainBGColor,#ff5722);
+	text-align: center;
+	position: relative;
+}
+
+h1::before, 
+h1::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: var(--mainBGColor,#ff5722);
+	z-index: -1;
+}
+
+h1::before {
+	-webkit-transform: skew(-10deg, -10deg);
+	-moz-transform: skew(-10deg, -10deg);
+	-ms-transform: skew(-10deg, -10deg);
+	-o-transform: skew(-10deg, -10deg);
+	transform: skew(-10deg, -10deg);
+}
+
+h1::after {
+	-webkit-transform: skew(10deg, 10deg);
+	-moz-transform: skew(10deg, 10deg);
+	-ms-transform: skew(10deg, 10deg);
+	-o-transform: skew(10deg, 10deg);
+	transform: skew(10deg, 10deg);
+}

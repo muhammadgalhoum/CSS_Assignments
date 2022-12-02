@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  background-color: #eeeeee;
+  width: 1000px;
+  padding: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.f-div,
+.s-div,
+.t-div,
+.l-div {
+  float: left;
+  background-color: #ddd;
+  text-align: center;
+  padding: 20px 15px; 
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+.f-div {
+  margin: 15px 0 15px 15px;
+  width: calc(100% - 30px);
+}
+
+.s-div {
+  width: calc((100% - 60px) / 3);
+}
+
+.t-div {
+  width: calc((100% - 45px) / 2);
+
+}
+
+.l-div {
+  width: calc((100% - 75px) / 4);
+}
+
+.s-div,
+.t-div,
+.l-div {
+  margin: 0 0 15px 15px;
+}

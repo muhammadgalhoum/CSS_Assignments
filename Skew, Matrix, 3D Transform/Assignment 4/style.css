@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	background-color: #607d8b;
+	margin: 50% auto;
+	box-shadow: 0 -5px 0 black inset;
+	position: relative;
+}
+
+div::before {
+	content: '';
+	position: absolute;
+	width: 70.6%;
+	height: 70.6%;
+	background-color:black;
+	transform: translate(20.8%, -50%) rotate(45deg);
+	box-shadow: -5px -5px 0 white inset;
+}
+
+div::after {
+	content: "elzero";
+	position: absolute;
+	color: white;
+	left: 0;
+	bottom: 0;
+	text-transform: Capitalize;
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 10px;
+}

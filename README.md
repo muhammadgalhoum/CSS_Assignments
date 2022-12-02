@@ -1,2 +1,5 @@
-# CSS_Assignments
-The Solutions for All CSS Assignments
+# CSS Assignments
+
+**All Solutions for CSS Assignments.**
+
+***If you have any comments please don't hesitate to contact me.***

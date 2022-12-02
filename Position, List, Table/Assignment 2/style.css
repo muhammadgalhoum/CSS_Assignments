@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+	margin: 40px auto;
+	border-style: solid;
+	border-width: 3px;
+	border-color:red blue;
+	padding: 25px 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	width: 665px;
+  text-align: center;
+	position: relative;
+	background-color:#eee;
+  line-height: 200%;
+}
+
+span {
+	width: 52px;
+	height: 40px;
+	padding: 0 0 0 0;
+	position: absolute;
+	color:white;
+	background-color:#2196f3;
+	text-align: center;
+	border-width: 3px;
+  line-height: 165%;
+}
+
+.top-left {
+	top: -20px;
+	left: -24px;
+	border-right-style: solid;
+	border-right-color:red;
+}
+
+.bottom-left {
+	bottom: -20px;
+	left: -24px;
+	border-right-style: solid;
+	border-right-color:red;
+}
+
+.top-right {
+	top: -20px;
+	right: -25px;
+	border-left-style: solid;
+	border-left-color:red;
+}
+
+.bottom-right {
+	bottom: -20px;
+	right: -25px;
+	border-left-style: solid;
+	border-left-color:red;
+}

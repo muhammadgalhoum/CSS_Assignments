@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  position: relative;
+  background-color:#eee;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 45px;
+  letter-spacing: 10px;
+  width: 600px;
+  padding: 25px;
+  margin: 30px auto;
+}
+
+div::before {
+content: "";
+width: 620px;
+height: 120px;
+position: absolute;
+top: -10px;
+left: -10px;
+z-index: -1;
+background-image: linear-gradient(
+  to right,
+  #f44336 20%,
+  #2196f3 20%,
+  #2196f3 40%,
+  #4caf50 40%,
+  #4caf50 60%,
+  #e91e63 60%,
+  #e91e63 80%,
+  #673ab7 80%
+);
+}
+
+::first-letter{
+  color:#f44336;
+}

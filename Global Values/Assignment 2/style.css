@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+:root {
+	--mainColor: #ddd;
+}
+
+div{
+	position: relative;
+	background-color: var(--mainColor, #ddd);
+	padding: 40px;
+	margin: 60px;
+	font-size: 20px;
+}
+
+.arrow::before {
+	content: '';
+	position: absolute;
+	background-color: transparent;
+	border: 20px solid transparent;
+	top: 50%;
+  left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform:translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.top::before {
+	top: calc(0% + -20px);
+	border-bottom-color:var(--mainColor, #ddd);
+}
+
+.right::before {
+	left: calc(100% + 20px);
+	border-left-color:var(--mainColor, #ddd);
+}
+
+.bottom::before {
+	top: calc(100% + 20px);
+	border-top-color: var(--mainColor, #ddd);
+}
+
+.left::before {
+	left: calc(0% + -20px);
+	border-right-color:var(--mainColor, #ddd);
+}

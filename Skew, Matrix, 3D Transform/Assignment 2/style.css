@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+	--mainColor:#fff;
+	--mainBGColor:#009688;
+}
+
+h1 {
+	width: 150px;
+	padding: 20px 0;
+	margin: 50px auto;
+	color: var(--mainColor,#fff);
+	background-color: var(--mainBGColor,#009688);
+	text-align: center;
+	position: relative;
+}
+
+h1::before {
+	content: '';
+	position: absolute;
+	width: 36px;
+	height: 76.7px;
+	top: 0;
+	left: -18px;
+	background-color:var(--mainBGColor,#009688);
+	z-index: -1;
+}
+
+h1::after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 76.7px;
+	top: 0;
+	left: -45px;
+	background-color: var(--mainBGColor,#009688);
+	z-index: 1;
+}
+
+h1::before {
+	-webkit-transform: skew(-10deg, -10deg);
+	-moz-transform: skew(-10deg, -10deg);
+	-ms-transform: skew(-10deg, -10deg);
+	-o-transform: skew(-10deg, -10deg);
+	transform: skew(25deg, 0deg);
+}
+
+h1::after {
+	-webkit-transform: skew(-10deg, -10deg);
+	-moz-transform: skew(-10deg, -10deg);
+	-ms-transform: skew(-10deg, -10deg);
+	-o-transform: skew(-10deg, -10deg);
+	transform: skew(25deg, 0deg);
+}

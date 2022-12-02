@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  height: 300px;
+  padding: 10px;
+  margin: 30px auto;
+  background-color:#eee;
+  display: flex;
+}
+
+.parent div {
+  color:white;
+  width: 100px;
+  height: 140px;
+  text-align: center;
+  padding: 65px 0;
+}
+
+.one {
+  background-color:#ff9800;
+  order: 0;
+  margin-left: 160px;
+  
+}
+
+.two {
+  background-color:#8bc34a;
+  order: 3;
+  align-self: flex-end;
+  margin-left: 220px;
+}
+
+.three {
+  background-color:#795548;
+  order: 1;
+  margin-left: 220px;
+}
+
+.four {
+  background-color:#673ab7;
+  order: 2;
+  align-self: flex-end;
+  margin-left: -580px;
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  color:white;
+  background-color:#c93c3c;
+  padding: 10px;
+  max-width: 400px;
+  max-height: 30px;
+}
+
+.p-1,
+.p-2,
+.p-3{
+  width: fit-content;
+}
+
+.p-4{
+  overflow: hidden;
+}

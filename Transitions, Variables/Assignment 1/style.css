@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 400px;
+  background-color: #EEE;
+  padding: 40px;
+  margin: 100px auto;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.parent:hover {
+  margin-top: 50px;
+}
+
+.parent .child {
+  background-color: #DDD;
+  padding: 20px;
+  margin: 20px auto;
+  transition: 0.5s 0.5s;
+}
+
+.parent:hover .child {
+  margin-top: 40px;
+}

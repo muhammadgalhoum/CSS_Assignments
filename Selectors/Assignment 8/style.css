@@ -1,0 +1,4 @@
+div :not(h3, div:nth-child(6n+1)) {
+  color: red;
+  font-weight: bold;
+}

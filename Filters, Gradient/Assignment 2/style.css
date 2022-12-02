@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+width: 600px;
+margin: 20px auto;
+position: relative
+}
+
+input {
+width: inherit;
+padding: 20px;
+text-transform: capitalize;
+font-size: 20px;
+color:#000;
+background-color:#eee;
+border: none;
+}
+
+input:focus {
+border: none;
+outline: none;
+caret-color: #e91e63;
+}
+
+.two,
+.three {
+pointer-events: none;
+}
+
+div::after {
+content: "";
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 100%;
+height: 5px;
+background-color:red;
+background-image: linear-gradient(
+    to right, 
+    #f44336 50%, 
+    #03a9f4 50% 
+  );
+}

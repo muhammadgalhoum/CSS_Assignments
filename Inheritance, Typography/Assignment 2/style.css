@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.p-1,
+.p-2,
+.p-3 {
+  text-transform: capitalize;
+  font-size: 50px;
+}
+
+.p-1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.p-2 {
+  font-family: 'Cairo', sans-serif;
+}
+
+.p-3 {
+  font-family: 'Jomhuria', cursive;
+  margin-left: 80px;
+}

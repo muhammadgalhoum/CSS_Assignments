@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent{
+  width: 600px;
+  height: 300px;
+  margin: 30px auto;
+  background-color:#eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.parent div{
+  color:white;
+  background-color:#009688;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 10px;
+}
+
+.one{
+  padding: 30px 10px ;
+  align-self: flex-end;
+  flex-basis: 90px;
+}
+
+.two{
+  padding: 30px 0;
+  flex-basis: 120px;
+  width: 320px;
+}
+
+.three{
+  padding: 30px 10px;
+  align-self: flex-end;
+  flex-basis: 90px;
+}

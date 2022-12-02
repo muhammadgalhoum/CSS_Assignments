@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  margin: 50% auto;
+  background-color: #eeeeee87;
+  border-top-left-radius: 10px 20px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 10px 20px;
+  border-bottom-left-radius: 50px;
+  -webkit-box-shadow: 0px 0px 6px 4px #7d7979 inset ;
+  -moz-box-shadow: 0px 0px 6px 4px #7d7979 inset;
+  -ms-box-shadow: 0px 0px 6px 4px #7d7979 inset;
+  -o-box-shadow: 0px 0px 6px 4px #7d7979 inset;
+  box-shadow: 0px 0px 6px 4px #7d7979 inset;
+}

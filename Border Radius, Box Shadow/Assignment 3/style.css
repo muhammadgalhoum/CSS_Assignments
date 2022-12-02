@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 550px;
+  margin: 20px auto;
+}
+
+.parent .f-div,
+.parent .s-div {
+  display: inline-block;
+  width: 250px;
+  background-color:#eee;
+}
+
+.parent .f-div p,
+.parent .s-div p {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  background-color:#03a9f4;
+  padding: 10px;
+  border-radius: 5px;
+  width: 180px;
+  margin: 20px auto;
+}
+
+.parent .f-div .inner-div,
+.parent .s-div .inner-div {
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  background-color: #ddd;
+  padding: 45px 25px 0;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.parent .f-div {
+  position: relative;
+  margin-right: 40px;
+}
+
+.f-div::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  background-color: #03a9f4;
+  border: 1px solid #03a9f4;
+  top: 0;
+  right: -33px;
+  margin: 0 10px;
+}
+
+.parent .s-div {
+  position: relative;
+}
+
+.s-div::before {
+  content: attr(border-text);
+  position: absolute;
+  top: 50%;
+  left: -35px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  background-color: #03a9f4;
+  border: 1px solid #03a9f4;
+  border-radius: 50%;
+  padding: 5px;
+  margin-top: -15px;
+}
